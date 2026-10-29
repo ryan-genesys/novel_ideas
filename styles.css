@@ -19,7 +19,8 @@ h2{font-size:clamp(1.6rem,3.5vw,2.2rem)}
 h3{font-size:1.25rem}
 p{margin:0 0 1em;max-width:62ch}
 a{color:var(--spine)}
-:focus-visible{outline:3px solid var(--marigold-dark);outline-offset:3px}
+/* Keyboard focus ring for the site only, so it does not draw around the Genesys chat widget */
+header :focus-visible,main :focus-visible,footer :focus-visible{outline:3px solid var(--marigold-dark);outline-offset:3px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
 
 /* header */
